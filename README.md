@@ -37,9 +37,14 @@ BiocManager::install(c("pcaMethods","limma","impute","sva","BiocParallel","genef
 ### Step2: install the *dbnorm*
 *dbnorm* is freely available from GitHub. 
 The package documentation, including  user manual is available within the downloaded R package file. 
-If all package dependencies were installed, you will be able to install the *dbnorm*. Users can either manually download the .tar.gz file or
-clon the github.
+If all package dependencies were installed, you will be able to install the *dbnorm*. Users can either manually download the .tar.gz file or clon the github.
 
+### Manual downloading
+cd ~/Downloads
+R CMD INSTALL dbnorm.tar.gz
+
+> Rstudio users
+First, download the tar.gz file in from GitHun then in Rstudio from tool icon select Install.packages and then Browse to the tar.gz file.
 
 ## Usage
 
