@@ -50,11 +50,17 @@ First, download the tar.gz file from GitHun then in Rstudio from Tools icon, sel
 then Browse to the tar.gz file.
 ```
 #### clon the github
-
+```
 git clone 
 git@github.com:NBDZ/dbnorm.git
-R CMD build MetaboAnalystR
-R CMD INSTALL MetaboAnalystR_*.tar.gz
+R CMD build Mdbnorm
+R CMD INSTALL dbnorm.tar.gz
+```
+> Rstudio users
+```
+Download the tar.gz file from GitHun then in Rstudio from Tools icon, select Install.packages and 
+then Browse to the tar.gz file.
+```
 ## Usage
 
 
