@@ -51,6 +51,7 @@ First, download the tar.gz file from GitHun then in Rstudio from tool icon selec
 #### clon the github
 
 git clone https://github.com/xia-lab/MetaboAnalystR.git
+git@github.com:NBDZ/dbnorm.git
 R CMD build MetaboAnalystR
 R CMD INSTALL MetaboAnalystR_*.tar.gz
 ## Usage
