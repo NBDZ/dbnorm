@@ -39,16 +39,20 @@ BiocManager::install(c("pcaMethods","limma","impute","sva","BiocParallel","genef
 The package documentation, including  user manual is available within the downloaded R package file. 
 If all package dependencies were installed, you will be able to install the *dbnorm*. Users can either manually download the .tar.gz file or clon the github.
 
-### Manual downloading
+#### Manual downloading
 ```
 cd ~/Downloads
 R CMD INSTALL dbnorm.tar.gz
 ```
 > Rstudio users
 ```
-First, download the tar.gz file in from GitHun then in Rstudio from tool icon select Install.packages and then Browse to the tar.gz file.
+First, download the tar.gz file from GitHun then in Rstudio from tool icon select Install.packages and then Browse to the tar.gz file.
 ```
+#### clon the github
 
+git clone https://github.com/xia-lab/MetaboAnalystR.git
+R CMD build MetaboAnalystR
+R CMD INSTALL MetaboAnalystR_*.tar.gz
 ## Usage
 
 TODO: Write usage instructions
