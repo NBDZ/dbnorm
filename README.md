@@ -61,7 +61,7 @@ R CMD INSTALL dbnorm.tar.gz
 Download the tar.gz file from GitHun then in Rstudio from Tools icon, select Install.packages and 
 then Browse to the tar.gz file.
 ```
-## Usage
+## Functions
 
 
 
