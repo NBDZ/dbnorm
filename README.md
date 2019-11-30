@@ -62,6 +62,21 @@ Download the tar.gz file from GitHun then in Rstudio from Tools icon, select Ins
 then Browse to the tar.gz file.
 ```
 ## Functions
+In this section, we breifly introduce the functions implemented in the *dbnorm* and explaine the expected outcome. 
+##### Upload your data
+data<-read.csv(" path/to/directory/folde/mydata.csv",sep = ",", header = T, row.names = 1)
+> data must be normalized and scaled on the log2 to account for the high abun dance features (variables) by which technical heterogeneity might be overlooked. The input data must be in csv format with the independent exper-
+iments in the rows and the features (variables) in the columns. The **batch**
+levels must be frames in the first column. 
+
+
+>emvd
+
+```
+Missing values in the forms of Zero values and NA values are estimated by the lowest detected value in the entire experiment
+
+
+
 
 
 
