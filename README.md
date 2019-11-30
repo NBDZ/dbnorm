@@ -106,6 +106,7 @@ of variables (features) in the raw and treated datasets. This function is sugges
 than 2k variables (features).
 
 - Graphical Inspection and dataset
+
 PCA plot, RLA plot, Scree plot
 csv format of corrected data
 ```
@@ -126,6 +127,7 @@ comparison of the models for selecting one of those models, which is more approp
 structure. This function is suggested for less than 2k features.
 
 - Graphical Inspection and dataset
+
 Correlation plot, Score plot
 csv format of score's of Adjusted R-squared and table for maximum Adjusted R-squared for each model
 
