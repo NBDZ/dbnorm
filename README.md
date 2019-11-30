@@ -13,7 +13,6 @@ structure. *dbnorm* implements several statistical models, including ComBat(para
 , that we propose here as a new approach for correction of drift across batch in metabolomics datasets. 
 ## A glimpse into the "dbnorm"
 ![dbnorm](https://user-images.githubusercontent.com/37698532/69902657-8e30c280-1390-11ea-9770-811e4a18eb85.jpg)
-
 ## Getting started
 ### Step1: installation
 Install package dependencies in CRAN and Bioconductor via cole bellow:
