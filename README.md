@@ -107,7 +107,7 @@ than 2k variables (features).
 
 - Graphical Inspection and dataset
 
-**PCA** plot, **RLA** plot, **Scree** plot
+**PCA** plot, **RLA** plot and **Scree** plot
 
 *csv* format of corrected data
 ```
@@ -129,16 +129,17 @@ structure. This function is suggested for less than 2k features.
 
 - Graphical Inspection and dataset
 
-**Correlation** plot, **Score** plot
+**Correlation** plot and **Score** plot
 
 *csv* format of score's of Adjusted R-squared and a *Table* for maximum Adjusted R-squared for each model
-
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
 ACDdbnorm(ff)
 ```
-
+>  **profplotraw**, **profplotber**, **profplotpcomr** and **profplotnpcomr**
+*Visualization of analytical heterogeneity on the profile of variables
+(features) in raw, ber- parametric ComBat and non-parametric ComBat corrected data*
 
 
 
