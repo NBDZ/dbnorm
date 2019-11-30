@@ -107,9 +107,9 @@ than 2k variables (features).
 
 - Graphical Inspection and dataset
 
-PCA plot, RLA plot, Scree plot
+**PCA** plot, **RLA** plot, **Scree** plot
 
-csv format of corrected data
+*csv* format of corrected data
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
 Visdbnorm(ff)
@@ -129,9 +129,9 @@ structure. This function is suggested for less than 2k features.
 
 - Graphical Inspection and dataset
 
-Correlation plot, Score plot
+**Correlation** plot, **Score** plot
 
-csv format of score's of Adjusted R-squared and table for maximum Adjusted R-squared for each model
+*csv* format of score's of Adjusted R-squared and a *Table* for maximum Adjusted R-squared for each model
 
 
 ```
