@@ -138,10 +138,11 @@ Graphical check such as **Correlation** plot and **Score** plot together with th
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
 ACDdbnorm(ff)
 ```
-> - profplotraw, 
-> - profplotber, 
-> - profplotpcomr and 
-> - profplotnpcomr; 
+> - profplotraw
+> - profplotber
+> - profplotpcomr 
+> - profplotnpcomr
+
 *Visualization of analytical heterogeneity on the profile of variables
 (features) in raw, ber- parametric ComBat and non-parametric ComBat corrected data*
 
@@ -158,7 +159,11 @@ profplotber(ff)
 profplotpcomr(ff)
 profplotnpcomr(ff)
 ```
-> **- dbnormBer**,**- dbnormPcom** and **- dbnormNPcom**; *unsupervised clustering and regression analysis of data corrected via ber-, parametric ComBat- and non parametric ComBat- model*
+> - dbnormBer
+> - dbnormPcom 
+> - dbnormNPcom 
+
+*unsupervised clustering and regression analysis of data corrected via ber-, parametric ComBat- and non parametric ComBat- model*
 
 These functions allow users to adjust the data for across batch signal drift or batch effect using either of
 models implemented in the package decribed earlier. These functions includ advanced statistical tools to inspect the structure and quality of high throughput experiment both in macroscopic and microscopic scale at the sample batch level and metabolic
