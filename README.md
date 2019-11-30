@@ -1,9 +1,10 @@
 # dbnorm
+** a package for drift across batch normalization**
 ![dbnorm](https://user-images.githubusercontent.com/37698532/69883192-4f890280-12d3-11ea-8b3b-13f110949e98.jpg)
 
 
 
-*dbnorm* package, drift across batch normalization, contains R functions which allow visualization and 
+*dbnorm* contains R functions which allow visualization and 
 removal of technical heterogeneity from large metabolomics dataset. By including advanced statistical tools, the *dbnorm* package allows user to inspect the structure and quality of large metabolomics datasets both in macroscopic and microscopic scales at the sample batch level and metabolic feature level, respectively.
 It allows users to efficiently correct drift across batch and to adjust large metabolomics datasets for technical variation which helps improving the estimation of the biological mechanisms underlying disease condition or medical state.
 *dbnorm* includes 11 distinct functions for pre-processing of data and estimation of missing values, 
@@ -78,20 +79,26 @@ data must be normalized and scaled on the log2 to account for the high abun danc
 
 This function allows you to estimate missing values in the forms of Zero values and/or NA values by the lowest detected value in the entire experiment.
 
-`
+```
 df<-data[-1] #keep data matrix by removing batch level in the first column
 >emvd [df]
-`
+```
 >emvf
 
 This function allows you to estimate missing value for each feature (variable) by the lowest
 value detected for the corresponding feature (variable). This function is applicable in all sort of high-throughput experiment. Both Zero values and NA values are imputed.
 
-`
+```
 df<-data[-1] #keep data matrix by removing batch level in the first column
 >emvf [df]
-`
+```
+>Visdbnorm
+*Visualization of drift across batch normalization*
 
+```
+df<-data[-1] #keep data matrix by removing batch level in the first column
+>emvf [df]
+```
 
 
 
