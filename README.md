@@ -77,23 +77,23 @@ data must be normalized and scaled on the log2 to account for the high abun danc
 >emvd
 
 This function allows you to estimate missing values in the forms of Zero values and/or NA values by the lowest detected value in the entire experiment.
+
 ```
-> First keep data matrix by removing batch level in the first column:
+*First keep data matrix by removing batch level in the first column:*
 df<-data[-1]
 >emvd [df]
-
 ```
 >emvf
+
 This function allows you to estimate missing value for each feature (variable) by the lowest
-value detected for the corresponding feature (variable). This function is
-applicable in all sort of high-throughput experiment. Both Zero values and NA values are imputed.
+value detected for the corresponding feature (variable). This function is applicable in all sort of high-throughput experiment. Both Zero values and NA values are imputed.
 
 ```
-> First keep data matrix by removing batch level in the first column:
+*First keep data matrix by removing batch level in the first column:*
 df<-data[-1]
 >emvf [df]
 ```
-> 
+
 
 
 
