@@ -25,7 +25,7 @@ install.packages(c("ggplot2","parallel","reshape2","plyr",
 "RColorBrewer","RCurl","lattice","data.table","igraph","tidyr","scales",
 "e1071","fpc"))
 
-Call all those package by:
+Call all those package by library:
 e.g. library (ber)
 ```
 > Bioconductor installer
@@ -34,7 +34,7 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
 BiocManager::install(c("pcaMethods","limma","impute","sva","BiocParallel","genefilter","Biobase"))
-Call all those package by:
+Call all those package by library:
 e.g. library (sva)
 
 ```
@@ -75,8 +75,8 @@ data must be normalized and scaled on the log2 to account for the high abun danc
 
 
 >emvd
-This function allows you to estimate missing values in the forms of Zero values and/or NA values by the lowest detected value in the entire experiment.
 
+This function allows you to estimate missing values in the forms of Zero values and/or NA values by the lowest detected value in the entire experiment.
 ```
 > First keep data matrix by removing batch level in the first column:
 df<-data[-1]
