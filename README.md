@@ -172,6 +172,5 @@ dbnormNPcom(ff)
 
 ```
 # license
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
+
+
