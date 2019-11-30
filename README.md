@@ -82,6 +82,7 @@ This function allows you to estimate missing values in the forms of Zero values 
 ```
 df<-data[-1] #keep data matrix by removing batch level in the first column
 >emvd [df]
+f<- emvd[df] # save the imputed data matrix
 ```
 >**emvf**
 
@@ -90,7 +91,8 @@ value detected for the corresponding feature (variable). This function is applic
 
 ```
 df<-data[-1] #keep data matrix by removing batch level in the first column
->emvf [df]
+> emvf [df]
+f <- emvf[df] # save the imputed data matrix
 ```
 >**Visdbnorm**; 
 *Visualization of drift across batch normalization*
@@ -103,11 +105,11 @@ in the context of unsupervised learning algorithms create visual inspection to i
 the spatial separation of the sample sets analyzed in the different analytical runs alongside the distribution
 of variables (features) in the raw and treated datasets. This function is suggested for less
 than 2k variables (features).
-
-
+- PCA plot -RLA plot -Scree plot
+- csv format of corrected data
 ```
-df<-data[-1] #keep data matrix by removing batch level in the first column
->emvf [df]
+ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
+Visdbnorm(ff)
 ```
 
 
