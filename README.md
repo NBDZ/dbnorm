@@ -112,6 +112,7 @@ Visdbnorm(ff)
 ```
 >**ACDdbnorm**; 
 *Adjusted coefficient of determination for a data normalized for across batch signal drift*
+
 This function gives a quick notification about the performance of the statistical models implemented
 in the dbnorm package such as two-stage procedure [DOI 10.1007/s12561-013-9081-1] and/or empirical Bayes methods in two setting of
 parametric and non-parametric as described in [PMID: 16632515] and by sva package [PMID: 22257669]. Then adjusted coefficient of determination or Adjusted R-Squared is calculated for each variable
