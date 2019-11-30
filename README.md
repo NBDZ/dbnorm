@@ -129,6 +129,11 @@ structure. This function is suggested for less than 2k features.
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
 ACDdbnorm(ff)
 ```
+```ruby
+  def foo
+    puts 'bar'
+  end
+```
 
 
 
