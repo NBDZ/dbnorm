@@ -68,9 +68,9 @@ then Browse to the tar.gz file.
 ## Functions
 In this section, we breifly introduce the functions implemented in the *dbnorm* and explaine the expected outcome. 
 
-##### *Upload your data ana call the package*
+##### *Upload your data ana call the package;*
 
-- Example:
+######- Example:
 
 > data<-read.csv(" path/to/directory/folde/mydata.csv",sep = ",", header = T, row.names = 1)
 
