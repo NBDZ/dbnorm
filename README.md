@@ -70,9 +70,9 @@ In this section, we breifly introduce the functions implemented in the *dbnorm* 
 ##### *Upload your data*
 ###### Example:
 > data<-read.csv(" path/to/directory/folde/mydata.csv",sep = ",", header = T, row.names = 1)
+> library(dbnorm)
 
 data must be normalized and scaled on the log2 to account for the high abun dance features (variables) by which technical heterogeneity might be overlooked. The input data must be in csv format with the independent experiments in the rows and the features (variables) in the columns. The `batch` levels must be frames in the first column. 
-
 
 >**emvd**
 
