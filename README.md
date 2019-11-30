@@ -75,7 +75,7 @@ In this section, we breifly introduce the functions implemented in the *dbnorm* 
 data must be normalized and scaled on the log2 to account for the high abun dance features (variables) by which technical heterogeneity might be overlooked. The input data must be in csv format with the independent experiments in the rows and the features (variables) in the columns. The `batch` levels must be frames in the first column. 
 
 
->emvd
+>**emvd**
 
 This function allows you to estimate missing values in the forms of Zero values and/or NA values by the lowest detected value in the entire experiment.
 
@@ -83,7 +83,7 @@ This function allows you to estimate missing values in the forms of Zero values 
 df<-data[-1] #keep data matrix by removing batch level in the first column
 >emvd [df]
 ```
->emvf
+>**emvf**
 
 This function allows you to estimate missing value for each feature (variable) by the lowest
 value detected for the corresponding feature (variable). This function is applicable in all sort of high-throughput experiment. Both Zero values and NA values are imputed.
@@ -92,7 +92,7 @@ value detected for the corresponding feature (variable). This function is applic
 df<-data[-1] #keep data matrix by removing batch level in the first column
 >emvf [df]
 ```
->Visdbnorm
+>**Visdbnorm**; 
 *Visualization of drift across batch normalization*
 
 ```
