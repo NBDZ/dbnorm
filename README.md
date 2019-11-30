@@ -137,7 +137,7 @@ structure. This function is suggested for less than 2k features.
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
 ACDdbnorm(ff)
 ```
->  **profplotraw**, **profplotber**, **profplotpcomr** and **profplotnpcomr**
+>  **profplotraw**, **profplotber**, **profplotpcomr** and **profplotnpcomr**; 
 *Visualization of analytical heterogeneity on the profile of variables
 (features) in raw, ber- parametric ComBat and non-parametric ComBat corrected data*
 
