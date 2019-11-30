@@ -1,6 +1,5 @@
-# dbnorm
-** a package for drift across batch normalization**
-![LoGo](https://user-images.githubusercontent.com/37698532/69902254-86baea80-138b-11ea-8e3f-7009fd8a03b3.jpg)
+# dbnorm ** a package for drift across batch normalization**
+![image](https://user-images.githubusercontent.com/37698532/69902291-11034e80-138c-11ea-8cad-d3b8dadd1493.png)
 
 
 
