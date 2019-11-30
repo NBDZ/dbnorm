@@ -105,11 +105,8 @@ the spatial separation of the sample sets analyzed in the different analytical r
 of variables (features) in the raw and treated datasets. This function is suggested for less
 than 2k variables (features).
 
-- Graphical Inspection and dataset
-
-**PCA** plot, **RLA** plot and **Scree** plot
-
-*csv* format of corrected data
+- Value
+Graphical check such as **PCA** plot, **RLA** plot and **Scree** plot together with data frame of corrected data in *csv* format 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
 Visdbnorm(ff)
@@ -127,11 +124,8 @@ by the batch level, notify the consistency of model performance for all detected
 comparison of the models for selecting one of those models, which is more appropriate to the data
 structure. This function is suggested for less than 2k features.
 
-- Graphical Inspection and dataset
-
-**Correlation** plot and **Score** plot
-
-*csv* format of score's of Adjusted R-squared and a *Table* for maximum Adjusted R-squared for each model
+- Value
+Graphical check such as **Correlation** plot and **Score** plot together with the two vector data matrix of Adjusted R-squared for each model and a *Table* of score for the maximum Adjusted R-squared for each model
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
