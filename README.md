@@ -69,6 +69,7 @@ then Browse to the tar.gz file.
 In this section, we breifly introduce the functions implemented in the *dbnorm* and explaine the expected outcome. 
 ##### *Upload your data*
 ###### Example:
+
 > data<-read.csv(" path/to/directory/folde/mydata.csv",sep = ",", header = T, row.names = 1)
 > library(dbnorm)
 
