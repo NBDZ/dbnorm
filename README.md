@@ -104,7 +104,9 @@ in the context of unsupervised learning algorithms create visual inspection to i
 the spatial separation of the sample sets analyzed in the different analytical runs alongside the distribution
 of variables (features) in the raw and treated datasets. This function is suggested for less
 than 2k variables (features).
-- PCA plot -RLA plot -Scree plot
+- PCA plot 
+- RLA plot 
+- Scree plot
 - csv format of corrected data
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
@@ -123,17 +125,18 @@ by the batch level, notify the consistency of model performance for all detected
 comparison of the models for selecting one of those models, which is more appropriate to the data
 structure. This function is suggested for less than 2k features.
 
-- Correlation plot -Score plot
-- csv format of score's of Adjusted R-squared - csv format of table for maximum Adjusted R-squared for each model
+`
+- Correlation plot
+- Score plot
+- csv format of score's of Adjusted R-squared 
+- csv format of table for maximum Adjusted R-squared for each model
+
+`
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
 ACDdbnorm(ff)
 ```
-```ruby
-  def foo
-    puts 'bar'
-  end
-```
+
 
 
 
