@@ -95,6 +95,16 @@ df<-data[-1] #keep data matrix by removing batch level in the first column
 >**Visdbnorm**; 
 *Visualization of drift across batch normalization*
 
+This function performs batch effect adjustment via three statistical models implemented in the
+dbnorm, namely two-stage procedure as described by Giordan (2013)[DOI 10.1007/s12561-013-9081-1]
+and/or empirical Bayes methods in two setting of parametric and non-parametric as described by
+Johnson et al.(2007) [PMID: 16632515] and in sva package by Leek et al.(2012)[PMID: 22257669]. Meanwhile, the graphical inferences
+in the context of unsupervised learning algorithms create visual inspection to inform users about
+the spatial separation of the sample sets analyzed in the different analytical runs alongside the distribution
+of variables (features) in the raw and treated datasets. This function is suggested for less
+than 2k variables (features).
+
+
 ```
 df<-data[-1] #keep data matrix by removing batch level in the first column
 >emvf [df]
