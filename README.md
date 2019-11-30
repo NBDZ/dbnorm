@@ -150,7 +150,7 @@ profplotber(ff)
 profplotpcomr(ff)
 profplotnpcomr(ff)
 ```
-> **bnormBer**,**dbnormPcom** and **dbnormNPcom**; *unsupervised clustering and regression analysis of data corrected via ber-, parametric ComBat- and non parametric ComBat- model*
+> **dbnormBer**,**dbnormPcom** and **dbnormNPcom**; *unsupervised clustering and regression analysis of data corrected via ber-, parametric ComBat- and non parametric ComBat- model*
 
 These functions allow users to adjust the data for across batch signal drift or batch effect using either of
 models implemented in the package decribed earlier. These functions includ advanced statistical tools to inspect the structure and quality of high throughput experiment both in macroscopic and microscopic scale at the sample batch level and metabolic
@@ -166,7 +166,7 @@ Graphical check such as **PCA** plot, **RLA** plot, **Scree** plot and **Correla
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
-bnormBer(ff)
+dbnormBer(ff)
 dbnormPcom(ff)
 dbnormNPcom(ff)
 
