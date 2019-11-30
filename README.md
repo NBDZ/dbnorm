@@ -24,6 +24,9 @@ install.packages(c("ggplot2","parallel","reshape2","plyr",
 "bootstrap","boot","caret","dplyr","stringr","ggfortify","factoextra","NormalizeMets","MASS","ber",
 "RColorBrewer","RCurl","lattice","data.table","igraph","tidyr","scales",
 "e1071","fpc"))
+
+Call all those package by:
+e.g. library (ber)
 ```
 > Bioconductor installer
 ```
@@ -31,7 +34,8 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
 BiocManager::install(c("pcaMethods","limma","impute","sva","BiocParallel","genefilter","Biobase"))
-
+Call all those package by:
+e.g. library (sva)
 
 ```
 ### Step2: install the *dbnorm*
