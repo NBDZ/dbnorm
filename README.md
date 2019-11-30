@@ -70,7 +70,7 @@ In this section, we breifly introduce the functions implemented in the *dbnorm* 
 
 ##### *Upload your data ana call the package*
 
-*Example:
+- Example:
 
 > data<-read.csv(" path/to/directory/folde/mydata.csv",sep = ",", header = T, row.names = 1)
 
