@@ -171,8 +171,7 @@ dbnormPcom(ff)
 dbnormNPcom(ff)
 
 ```
-
-TODO: Write license
+# license
 ]]></content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
