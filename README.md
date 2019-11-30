@@ -143,7 +143,7 @@ ACDdbnorm(ff)
 > - profplotpcomr 
 > - profplotnpcomr
 
-*Visualization of analytical heterogeneity on the profile of variables
+> *Visualization of analytical heterogeneity on the profile of variables
 (features) in raw, ber- parametric ComBat and non-parametric ComBat corrected data*
 
 These functions allow users to adjust the data for batch effect base on either of models implemented in the package decribed earlier, and inform about the presence of across batch signal drift or batch effect in the raw and treated data represented via the shifted probability density function plots (pdf plots) of variables (features) detected in an experiment.
@@ -163,7 +163,7 @@ profplotnpcomr(ff)
 > - dbnormPcom 
 > - dbnormNPcom 
 
-*unsupervised clustering and regression analysis of data corrected via ber-, parametric ComBat- and non parametric ComBat- model*
+> *Unsupervised clustering and regression analysis of data corrected via ber-, parametric ComBat- and non parametric ComBat- model*
 
 These functions allow users to adjust the data for across batch signal drift or batch effect using either of
 models implemented in the package decribed earlier. These functions includ advanced statistical tools to inspect the structure and quality of high throughput experiment both in macroscopic and microscopic scale at the sample batch level and metabolic
