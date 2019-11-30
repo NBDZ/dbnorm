@@ -137,7 +137,7 @@ ACDdbnorm(ff)
 *Visualization of analytical heterogeneity on the profile of variables
 (features) in raw, ber- parametric ComBat and non-parametric ComBat corrected data*
 
-These functions allow users to adjust the data for batch effect base on either of model implemented in the package decribed earlier, and inform about the presence of across batch signal drift or batch effect in the raw and treated data represented via the shifted probability density function plots (pdf plots) of variables (features) detected in an experiment.
+These functions allow users to adjust the data for batch effect base on either of models implemented in the package decribed earlier, and inform about the presence of across batch signal drift or batch effect in the raw and treated data represented via the shifted probability density function plots (pdf plots) of variables (features) detected in an experiment.
 
 - Value
 
@@ -150,8 +150,27 @@ profplotber(ff)
 profplotpcomr(ff)
 profplotnpcomr(ff)
 ```
+> **bnormBer**,**dbnormPcom** and **dbnormNPcom**; *unsupervised clustering and regression analysis of data corrected via ber-, parametric ComBat- and non parametric ComBat- model*
 
+These functions allow users to adjust the data for across batch signal drift or batch effect using either of
+models implemented in the package decribed earlier. These functions includ advanced statistical tools to inspect the structure and quality of high throughput experiment both in macroscopic and microscopic scale at the sample batch level and metabolic
+feature level, respectively. Notably, using this function users perform unsupervised clustering analysis
+of the raw data and the treated dataset. In parallel, Adjusted-R squared value for each variable
+(feature) estimated by regression model is calculated, which demonstrate the dependency of variable
+(feature) to the batch level in either of those datasets. In addition, for quick notification about
+the performance of the applied model we considered a score, which is calculated based on the maximum variability. This score notifies  the consistency of model performance for the detected variables (features).
 
+- Value
+
+Graphical check such as **PCA** plot, **RLA** plot, **Scree** plot and **Correlation** plot together with data frame of corrected data in *csv* format and two column matrix of Adjusted-R squared.
+
+```
+ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
+bnormBer(ff)
+dbnormPcom(ff)
+dbnormNPcom(ff)
+
+```
 
 TODO: Write license
 ]]></content>
