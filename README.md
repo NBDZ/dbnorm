@@ -171,6 +171,6 @@ dbnormPcom(ff)
 dbnormNPcom(ff)
 
 ```
-# license
+# License
 Distributed under the GLP license. See LICENSE for details.
 
