@@ -79,7 +79,7 @@ Data to be uploaded must be normalized and scaled on the log2 to account for the
 
 ### Functions
 
-> - ** emvd**
+> - emvd
 
 This function allows you to estimate missing values in the forms of Zero values and/or NA values by the lowest detected value in the entire experiment.
 
@@ -88,7 +88,7 @@ df<-data[-1] #keep data matrix by removing batch level in the first column
 >emvd [df]
 f<- emvd[df] # save the imputed data matrix
 ```
->**emvf**
+> - emvf
 
 This function allows you to estimate missing value for each feature (variable) by the lowest
 value detected for the corresponding feature (variable). This function is applicable in all sort of high-throughput experiment. Both Zero values and NA values are imputed.
@@ -98,7 +98,7 @@ df<-data[-1] #keep data matrix by removing batch level in the first column
 > emvf [df]
 f <- emvf[df] # save the imputed data matrix
 ```
->** Visdbnorm**; 
+> - Visdbnorm ; 
 *Visualization of drift across batch normalization*
 
 This function performs batch effect adjustment via three statistical models implemented in the
@@ -117,7 +117,7 @@ Graphical check such as **PCA** plot, **RLA** plot and **Scree** plot together w
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
 Visdbnorm(ff)
 ```
->**- ACDdbnorm**; 
+> - ACDdbnorm ; 
 *Adjusted coefficient of determination for a data normalized for across batch signal drift*
 
 This function gives a quick notification about the performance of the statistical models implemented
@@ -138,7 +138,10 @@ Graphical check such as **Correlation** plot and **Score** plot together with th
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
 ACDdbnorm(ff)
 ```
->  **- profplotraw**, **- profplotber**, **- profplotpcomr** and **- profplotnpcomr**; 
+> - profplotraw, 
+> - profplotber, 
+> - profplotpcomr and 
+> - profplotnpcomr; 
 *Visualization of analytical heterogeneity on the profile of variables
 (features) in raw, ber- parametric ComBat and non-parametric ComBat corrected data*
 
