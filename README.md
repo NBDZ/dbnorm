@@ -77,7 +77,7 @@ Data to be uploaded must be normalized and scaled on the log2 to account for the
 
 > library(dbnorm)
 
-## Functions
+### Functions
 
 >**emvd**
 
