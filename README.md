@@ -5,6 +5,7 @@
 
 
 ## A GLIMPSE into the "dbnorm",A PACKAGE IN R
+![dbnorm](https://user-images.githubusercontent.com/37698532/69902657-8e30c280-1390-11ea-9770-811e4a18eb85.jpg)
 
 *dbnorm* contains R functions which allow visualization and 
 removal of technical heterogeneity from large metabolomics dataset. By including advanced statistical tools, the *dbnorm* package allows user to inspect the structure and quality of large metabolomics datasets both in macroscopic and microscopic scales at the sample batch level and metabolic feature level, respectively.
