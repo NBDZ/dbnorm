@@ -106,6 +106,7 @@ of variables (features) in the raw and treated datasets. This function is sugges
 than 2k variables (features).
 
 - Value
+
 Graphical check such as **PCA** plot, **RLA** plot and **Scree** plot together with data frame of corrected data in *csv* format 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
@@ -125,6 +126,7 @@ comparison of the models for selecting one of those models, which is more approp
 structure. This function is suggested for less than 2k features.
 
 - Value
+
 Graphical check such as **Correlation** plot and **Score** plot together with the two vector data matrix of Adjusted R-squared for each model and a *Table* of score for the maximum Adjusted R-squared for each model
 
 ```
@@ -134,6 +136,20 @@ ACDdbnorm(ff)
 >  **profplotraw**, **profplotber**, **profplotpcomr** and **profplotnpcomr**; 
 *Visualization of analytical heterogeneity on the profile of variables
 (features) in raw, ber- parametric ComBat and non-parametric ComBat corrected data*
+
+These functions allow users to adjust the data for batch effect base on either of model implemented in the package decribed earlier, and inform about the presence of across batch signal drift or batch effect in the raw and treated data represented via the shifted probability density function plots (pdf plots) of variables (features) detected in an experiment.
+
+- Value
+
+Graphical check such as **pdf** plot together with the data frame of corrected data in *csv* format
+
+```
+ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
+profplotraw(ff)
+profplotber(ff)
+profplotpcomr(ff)
+profplotnpcomr(ff)
+```
 
 
 
