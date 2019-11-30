@@ -12,7 +12,7 @@ structure. *dbnorm* implements several statistical models, including ComBat(para
 , that was already in use for metabolomics data normalization, and ber function [DOI 10.1007/s12561-013-9081-1], priorly developed for microarray gene expression data,
 , that we propose here as a new approach for correction of drift across batch in metabolomics datasets. 
 ## A glimpse into the "dbnorm"
-![image](https://user-images.githubusercontent.com/37698532/69905479-5c315780-13b4-11ea-9f5e-4bc8d52b805e.png)
+![image](https://user-images.githubusercontent.com/37698532/69905569-a404ae80-13b5-11ea-9305-69211ea124cd.png)
 ## Getting started
 ### Step1: installation
 Install package dependencies in CRAN and Bioconductor via cole bellow:
