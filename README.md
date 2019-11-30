@@ -2,10 +2,6 @@
 - a package for drift across batch normalization and visualization
 
 ![image](https://user-images.githubusercontent.com/37698532/69902291-11034e80-138c-11ea-8cad-d3b8dadd1493.png)
-
-
-## A glimpse into the "dbnorm"
-![dbnorm](https://user-images.githubusercontent.com/37698532/69902657-8e30c280-1390-11ea-9770-811e4a18eb85.jpg)
 *dbnorm* contains R functions which allow visualization and 
 removal of technical heterogeneity from large metabolomics dataset. By including advanced statistical tools, the *dbnorm* package allows user to inspect the structure and quality of large metabolomics datasets both in macroscopic and microscopic scales at the sample batch level and metabolic feature level, respectively.
 It allows users to efficiently correct drift across batch and to adjust large metabolomics datasets for technical variation which helps improving the estimation of the biological mechanisms underlying disease condition or medical state.
@@ -15,6 +11,8 @@ tools to generate several diagnosis plots to help users to choose the statistica
 structure. *dbnorm* implements several statistical models, including ComBat(parametric and non-parametric)-model[PMID: 16632515]  from *svs* package [PMID: 22257669]
 , that was already in use for metabolomics data normalization, and ber function [DOI 10.1007/s12561-013-9081-1], priorly developed for microarray gene expression data,
 , that we propose here as a new approach for correction of drift across batch in metabolomics datasets. 
+## A glimpse into the "dbnorm"
+![dbnorm](https://user-images.githubusercontent.com/37698532/69902657-8e30c280-1390-11ea-9770-811e4a18eb85.jpg)
 
 ## Getting started
 ### Step1: installation
