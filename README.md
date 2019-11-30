@@ -110,7 +110,24 @@ than 2k variables (features).
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
 Visdbnorm(ff)
 ```
+>**ACDdbnorm**; 
+*Adjusted coefficient of determination for a data normalized for across batch signal drift*
+This function gives a quick notification about the performance of the statistical models implemented
+in the dbnorm package such as two-stage procedure [DOI 10.1007/s12561-013-9081-1] and/or empirical Bayes methods in two setting of
+parametric and non-parametric as described in [PMID: 16632515] and by sva package [PMID: 22257669]. Then adjusted coefficient of determination or Adjusted R-Squared is calculated for each variable
+estimated in a regression model for its dependency to the batch level in the raw data and treated
+data via either of those models. Immediately, the performance of applied models are presented by
+a score calculated based on the maximum variability explained
+by the batch level, notify the consistency of model performance for all detected variables (features), facilitating quick
+comparison of the models for selecting one of those models, which is more appropriate to the data
+structure. This function is suggested for less than 2k features.
 
+- Correlation plot -Score plot
+- csv format of score's of Adjusted R-squared - csv format of table for maximum Adjusted R-squared for each model
+```
+ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
+ACDdbnorm(ff)
+```
 
 
 
