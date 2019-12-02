@@ -102,7 +102,7 @@ This function performs batch effect adjustment via three statistical models impl
 
 - Value
 
-Graphical check such as **PCA** plot, **RLA** plot and **Scree** plot compiled into a *PDF* and three *csv* of datasets adjusted for batch effect via either of the models.
+Graphical check such as **PCA** plot, **RLA** plot and **Scree** plot compiled into a *PDF* and three *csv* files for adjusted data based on the models implemented in the package.
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
 Visdbnorm(ff)
