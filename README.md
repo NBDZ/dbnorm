@@ -65,7 +65,7 @@ Download the tar.gz file from GitHun then in Rstudio from Tools icon, select Ins
 then Browse to the tar.gz file.
 ```
 ## Instructions
-In this section, we briefly introduce and explain the functions implemented in the *dbnorm* the expected outcome. Data to be uploaded must be normalized and scaled on the log2 to account for the high abundance features (variables) by which technical heterogeneity might be overlooked. The input data must be in csv format with the independent experiments in the rows and the features (variables) in the columns. The batch levels must be frames in the first column.
+In this section, we briefly introduce and explain the functions implemented in the *dbnorm* with the expected outcome. Data to be uploaded must be normalized and scaled on the log2 to account for the high abundance features (variables) by which technical heterogeneity might be overlooked. The input data must be in csv format with the independent experiments in the rows and the features (variables) in the columns. The batch levels must be frames in the first column.
 
 ##### *Upload your data ana call the package;*
 
