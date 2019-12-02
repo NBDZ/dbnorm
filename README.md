@@ -132,7 +132,7 @@ These functions allow users to adjust the data for batch effect using either of 
 
 - Value
 
-Graphical check such as **pdf** plot compiled into a *PDF* together with the corrected data in *csv* format
+Graphical check such as **pdf** plot compiled into a *PDF* file and a*csv* file of corrected dataset for either of moldel respecting applied function.
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
@@ -145,7 +145,7 @@ profplotnpcomr(ff)
 > - dbnormPcom 
 > - dbnormNPcom 
 
-*Data normalization for across batches signal drift using either of  ber-, parametric ComBat- and non parametric ComBat- models and unsupervised clustering and regression analysis of corrected data *
+> *Data normalization for across batches signal drift using either of  ber-, parametric ComBat- and non parametric ComBat- models and unsupervised clustering and regression analysis of corrected data*
 
 These functions allow users to adjust the data for across batch signal drift or batch effect using of either of those models implemented in the package described earlier. These functions include advanced statistical tools to inspect the structure and quality of high throughput experiment, both in macroscopic and microscopic scale at the sample batch level and metabolic feature level, respectively. Notably, using these functions users perform unsupervised clustering analysis of the raw data and the treated dataset. In parallel, Adjusted-R squared value for each feature (variable) estimated by regression model is calculated, which demonstrate the dependency of feature (variable) to the batch level in either of those datasets. In addition, for quick notification about the performance of the applied model we considered a score, which is calculated based on the maximum variability. This score notifies the performance consistency of an applied model on the detected features (variables).
 
