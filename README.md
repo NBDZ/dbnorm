@@ -65,7 +65,7 @@ Download the tar.gz file from GitHun then in Rstudio from Tools icon, select Ins
 then Browse to the tar.gz file.
 ```
 ## Instructions
-In this section, we briefly introduce the functions implemented in the dbnorm and explain the expected outcome. Data to be uploaded must be normalized and scaled on the log2 to account for the high abundance features (variables) by which technical heterogeneity might be overlooked. The input data must be in csv format with the independent experiments in the rows and the features (variables) in the columns. The batch levels must be frames in the first column.
+In this section, we briefly introduce and explain the functions implemented in the *dbnorm* the expected outcome. Data to be uploaded must be normalized and scaled on the log2 to account for the high abundance features (variables) by which technical heterogeneity might be overlooked. The input data must be in csv format with the independent experiments in the rows and the features (variables) in the columns. The batch levels must be frames in the first column.
 
 ##### *Upload your data ana call the package;*
 
@@ -98,7 +98,7 @@ f <- emvf[df] # save the imputed data matrix
 > - Visdbnorm ; 
 *Visualization of drift across batch normalization*
 
-This function performs batch effect adjustment via three statistical models implemented in the dbnorm, namely two-stage procedure as described by Giordan (2013)[DOI 10.1007/s12561-013-9081-1] and/or empirical Bayes methods in two setting of parametric and non-parametric as described by Johnson et al.(2007) [PMID: 16632515] and in sva package by Leek et al.(2012)[PMID: 22257669]. Meanwhile, the graphical inferences in the context of unsupervised learning algorithms create visual inspection to inform users about the spatial separation of the sample sets analyzed in the different analytical runs alongside the distribution of features (variables) in the raw and treated datasets. This function is suggested for less than 2000 features (variables).
+This function performs batch effect adjustment via three statistical models implemented in the *dbnorm*, namely two-stage procedure as described by Giordan (2013)[DOI 10.1007/s12561-013-9081-1] and/or empirical Bayes methods in two setting of parametric and non-parametric as described by Johnson et al.(2007) [PMID: 16632515] and in sva package by Leek et al.(2012)[PMID: 22257669]. Meanwhile, the graphical inferences in the context of unsupervised learning algorithms create visual inspection to inform users about the spatial separation of the sample sets analyzed in the different analytical runs alongside the distribution of features (variables) in the raw and treated datasets. This function is suggested for less than 2000 features (variables).
 
 - Value
 
