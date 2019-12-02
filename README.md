@@ -114,7 +114,7 @@ This function gives a quick notification about the performance of the statistica
 
 - Value
 
-Graphical check such as **Correlation** plot and **Score** plot compiled into a *PDF* and the two vector data matrix of Adjusted R-squared for each model and a *Table* of score for the maximum Adjusted R-squared detected for the applied models.
+Graphical check such as **Correlation** plot and **Score** plot compiled into a *PDF* and the two vector data matrix of Adjusted R-squared for each model and a *Table* of score for the maximum Adjusted R-squared detected for the applied models in the *csv* file.
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
