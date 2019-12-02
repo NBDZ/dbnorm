@@ -88,7 +88,7 @@ f<- emvd[df] # save the imputed data matrix
 ```
 > - emvf
 
-This function allows you to estimate missing values (Zero or/and NA values) for each feature (variable) by the lowest value detected for the corresponding feature (variable), applied on the column. This function is applicable in all sort of high-throughput experiment. 
+This function allows you to estimate missing values (Zero or/and NA values) for each feature (variable) by the lowest value detected for the corresponding feature (variable), applied on the column. 
 
 ```
 df<-data[-1] #keep data matrix by removing batch level in the first column
