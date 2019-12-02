@@ -1,5 +1,6 @@
 # dbnorm  
-- a package for drift across batch normalization and visualization
+
+A package for drift across batch normalization and visualization
 
 ![image](https://user-images.githubusercontent.com/37698532/69905457-f93fc080-13b3-11ea-9824-5e7fe8ee183a.png)
 *dbnorm* contains R functions which allow visualization and 
@@ -8,14 +9,14 @@ It allows users to efficiently correct drift across batch and to adjust large me
 *dbnorm* includes 11 distinct functions for pre-processing of data and estimation of missing values, 
 conventional functions for batch effect correction based on statistical models, as well as functions using advanced statistical 
 tools to generate several diagnosis plots to help users to choose the statistical model which better fits to their data 
-structure. *dbnorm* implements several statistical models, including ComBat(parametric and non-parametric)-model[PMID: 16632515]  from *svs* package [PMID: 22257669]
+structure. *dbnorm* includes several statistical models such as, ComBat(parametric and non-parametric)-model[PMID: 16632515]  from *svs* package [PMID: 22257669]
 , that was already in use for metabolomics data normalization, and ber function [DOI 10.1007/s12561-013-9081-1], priorly developed for microarray gene expression data,
 , that we propose here as a new approach for correction of drift across batch in metabolomics datasets. 
 ## A glimpse into the "dbnorm"
 ![image](https://user-images.githubusercontent.com/37698532/69905569-a404ae80-13b5-11ea-9305-69211ea124cd.png)
 ## Getting started
 ### Step1: installation
-Install package dependencies in CRAN and Bioconductor via cole bellow:
+Install package dependencies in CRAN and Bioconductor via codes bellow:
 
 > R installer
 ```
@@ -58,7 +59,7 @@ then Browse to the tar.gz file.
 git clone 
 git@github.com:NBDZ/dbnorm.git
 R CMD build Mdbnorm
-R CMD INSTALL dbnorm.tar.gz
+R CMD INSTALL dbnorm tar.gz
 ```
 > Rstudio users
 ```
@@ -67,7 +68,7 @@ then Browse to the tar.gz file.
 ```
 ## Instructions
 In this section, we breifly introduce the functions implemented in the *dbnorm* and explaine the expected outcome. 
-Data to be uploaded must be normalized and scaled on the log2 to account for the high abun dance features (variables) by which technical heterogeneity might be overlooked. The input data must be in csv format with the independent experiments in the rows and the features (variables) in the columns. The `batch` levels must be frames in the first column. 
+Data to be uploaded must be normalized and scaled on the log2 to account for the high abundance features (variables) by which technical heterogeneity might be overlooked. The input data must be in csv format with the independent experiments in the rows and the features (variables) in the columns. The `batch` levels must be frames in the first column. 
 
 ##### *Upload your data ana call the package;*
 
