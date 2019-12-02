@@ -42,12 +42,12 @@ e.g. library (sva)
 ### Step2: install the *dbnorm*
 *dbnorm* is freely available from GitHub. 
 The package documentation, including  user manual is available within the downloaded R package file. 
-If all package dependencies were installed, you will be able to install the *dbnorm*. Users can either manually download the .tar.gz file or clon the github.
+If all package dependencies were installed, you will be able to install the *dbnorm*. Users can either manually download the tar.gz file or clon the GitHub.
 
 #### Manual downloading
 ```
 cd ~/Downloads
-R CMD INSTALL dbnorm.tar.gz
+R CMD INSTALL dbnorm tar.gz
 ```
 > Rstudio users
 ```
