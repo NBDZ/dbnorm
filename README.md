@@ -1,4 +1,4 @@
-# dbnorm  
+# dbnorm (V-0.1)
 
 A package for drift across batch normalization and visualization
 
@@ -102,7 +102,7 @@ This function performs batch effect adjustment via three statistical models impl
 
 - Value
 
-Graphical check such as **PCA** plot, **RLA** plot and **Scree** plot compiled into a *PDF* and three *csv* files for adjusted data based on the models implemented in the package.
+Graphical check such as *PCA* plot and *Scree* plot compiled into a **PDF** and three **csv** files for adjusted data based on the models implemented in the package.The *RLA* plots are visualized in the **Viewer** panel in the **rstudio** console. 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
 Visdbnorm(ff)
@@ -114,7 +114,7 @@ This function gives a quick notification about the performance of the statistica
 
 - Value
 
-Graphical check such as **Correlation** plot and **Score** plot compiled into a *PDF* and the two vector data matrix of Adjusted R-squared for each model and a *Table* of score for the maximum Adjusted R-squared detected for the applied models in the *csv* file.
+Graphical check such as *Correlation* plot and *Score* plot compiled into a **PDF** and the two vector data matrix of Adjusted R-squared for each model and a *Table* of score for the maximum Adjusted R-squared detected for the applied models in the **csv** file.
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
@@ -132,7 +132,7 @@ These functions allow users to adjust the data for batch effect using either of 
 
 - Value
 
-Graphical check such as **pdf** plot compiled into a *PDF* file and a*csv* file of corrected dataset for either of moldel respecting applied function.
+Graphical check such as *pdf* plot compiled into a **PDF** file and a **csv** file of corrected dataset for either of moldel respecting applied function.
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
@@ -151,7 +151,7 @@ These functions allow users to adjust the data for across batch signal drift or 
 
 - Value
 
-Graphical check such as **PCA** plot, **RLA** plot, **Scree** plot and **Correlation** plot compiled into a *PDF* and the *csv* for corrected dataset based on either of applied model and the two column matrix of Adjusted-R squared.
+Graphical check such as *PCA* plot, *Scree* plot and *Correlation* plot compiled into a **PDF** and the **csv** for corrected dataset based on either of applied model and the two column matrix of Adjusted-R squared. The *RLA* plots are visualized in the **Viewer** panel in the **rstudio** console. 
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
