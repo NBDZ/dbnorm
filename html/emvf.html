@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Estimation of missing value feature-based</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for emvf {dbnorm}"><tr><td>emvf {dbnorm}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Estimation of missing value feature-based</h2>
+
+<h3>Description</h3>
+
+<p>It returns to a matrix of data in which missing values (Zero and/or NA values) are estimated. By this function, all Zero values are first replaced by NA values, which are then replaced by the lowest detected value on the column margin.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+emvf(m)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>m</code></td>
+<td>
+<p>An array or a matrix</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>empty entries are not allowed
+</p>
+
+
+<h3>Value</h3>
+
+<p>A matrix with estimated missing value.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+m&lt;- data.frame(x1=c(50,NA,6,10,30),x2=c(2,8,NA,15,0))
+
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>dbnorm</em> version 0.1.0 <a href="00Index.html">Index</a>]</div>
+</body></html>
