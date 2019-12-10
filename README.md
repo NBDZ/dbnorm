@@ -1,6 +1,6 @@
 # dbnorm (V-0.1)
 
-A package for drift across batch normalization and visualization
+A package for drift across batches normalization and visualization
 
 ![image](https://user-images.githubusercontent.com/37698532/69905457-f93fc080-13b3-11ea-9824-5e7fe8ee183a.png)
 *dbnorm* contains R functions which allow visualization and 
