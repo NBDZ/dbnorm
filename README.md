@@ -9,7 +9,7 @@ It allows users to efficiently correct drift across batch and to adjust large me
 *dbnorm* includes 11 distinct functions for pre-processing of data and estimation of missing values, 
 conventional functions for batch effect correction based on statistical models, as well as functions using advanced statistical 
 tools to generate several diagnosis plots to help users to choose the statistical model which better fits to their data 
-structure. *dbnorm* includes several statistical models such as, ComBat(parametric and non-parametric)-model[PMID: 16632515]  from *svs* package [PMID: 22257669] ,that was already in use for metabolomics data normalization, and ber function [DOI 10.1007/s12561-013-9081-1], priorly developed for microarray gene expression data, that we propose here as a new approach for correction of drift across batch in metabolomics datasets. 
+structure. *dbnorm* includes several statistical models such as, ComBat(parametric and non-parametric)-model[PMID: 16632515]  from sva package [PMID: 22257669] ,that was already in use for metabolomics data normalization, and ber function [DOI 10.1007/s12561-013-9081-1], priorly developed for microarray gene expression data, that we propose here as a new approach for correction of drift across batch in metabolomics datasets. 
 ## A glimpse into the "dbnorm"
 ![image](https://user-images.githubusercontent.com/37698532/69905569-a404ae80-13b5-11ea-9305-69211ea124cd.png)
 ## Getting started
