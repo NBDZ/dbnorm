@@ -9,7 +9,7 @@ It allows users to efficiently correct drift across batch and to adjust large me
 *dbnorm* includes 11 distinct functions for pre-processing of data and estimation of missing values, 
 conventional functions for batch effect correction based on statistical models, as well as functions using advanced statistical 
 tools to generate several diagnosis plots to help users to choose the statistical model which better fits to their data 
-structure. *dbnorm* includes several statistical models such as, ComBat(parametric and non-parametric)-model[PMID: 16632515]  from sva package [PMID: 22257669] ,that was already in use for metabolomics data normalization, and ber function [DOI 10.1007/s12561-013-9081-1], priorly developed for microarray gene expression data, that we propose here as a new approach for correction of drift across batch in metabolomics datasets. 
+structure. *dbnorm* includes several statistical models such as, ComBat(parametric and non-parametric)-model[PMID:16632515]  from sva package [PMID:22257669] ,that was already in use for metabolomics data normalization, and ber function [DOI:10.1007/s12561-013-9081-1], priorly developed for microarray gene expression data, that we propose here as a new approach for correction of drift across batch in metabolomics datasets. 
 ## A glimpse into the "dbnorm"
 ![image](https://user-images.githubusercontent.com/37698532/69905569-a404ae80-13b5-11ea-9305-69211ea124cd.png)
 ## Getting started
@@ -98,7 +98,7 @@ f <- emvf[df] # save the imputed data matrix
 > - Visdbnorm ; 
 *Visualization of drift across batch normalization*
 
-This function performs batch effect adjustment via three statistical models implemented in the *dbnorm*, namely two-stage procedure as described by Giordan (2013)[DOI 10.1007/s12561-013-9081-1] and/or empirical Bayes methods in two setting of parametric and non-parametric as described by Johnson et al.(2007) [PMID: 16632515] and in sva package by Leek et al.(2012)[PMID: 22257669]. Meanwhile, the graphical inferences in the context of unsupervised learning algorithms create visual inspection to inform users about the spatial separation of the sample sets analyzed in the different analytical runs alongside the distribution of features (variables) in the raw and treated datasets. This function is suggested for less than 2000 features (variables).
+This function performs batch effect adjustment via three statistical models implemented in the *dbnorm*, namely two-stage procedure as described by Giordan (2013)[DOI:10.1007/s12561-013-9081-1] and/or empirical Bayes methods in two setting of parametric and non-parametric as described by Johnson et al.(2007) [PMID: 16632515] and in sva package by Leek et al.(2012)[PMID: 22257669]. Meanwhile, the graphical inferences in the context of unsupervised learning algorithms create visual inspection to inform users about the spatial separation of the sample sets analyzed in the different analytical runs alongside the distribution of features (variables) in the raw and treated datasets. This function is suggested for less than 2000 features (variables).
 
 - Value
 
@@ -110,11 +110,11 @@ Visdbnorm(ff)
 > - ACDdbnorm ; 
 *Adjusted coefficient of determination for a data normalized for across batch signal drift*
 
-This function gives a quick notification about the performance of the statistical models, two-stage procedure [DOI 10.1007/s12561-013-9081-1] and/or empirical Bayes methods in two setting of parametric and non-parametric as described in [PMID: 16632515] and by sva package [PMID: 22257669], implemented in the dbnorm package, in accommodating technical variability. Subsequently, the  adjusted coefficient of determination or Adjusted R-Squared is calculated for each variable estimated in a regression model for its dependency to the batch level in the raw data and treated data via either of those models. Immediately, the performance of applied models are presented by a score calculated based on the maximum variability explained by the batch level, notify the consistency of model performance for all detected features (variables), facilitating quick comparison of the models for selecting one of those models, which is more appropriate to the data structure. This function is suggested for less than 2000 features (variables) for better computational speed.
+This function gives a quick notification about the performance of the statistical models, two-stage procedure [DOI:10.1007/s12561-013-9081-1] and/or empirical Bayes methods in two setting of parametric and non-parametric as described in [PMID: 16632515] and by sva package [PMID:22257669], implemented in the dbnorm package, in accommodating technical variability. Subsequently, the  adjusted coefficient of determination or Adjusted R-Squared is calculated for each variable estimated in a regression model for its dependency to the batch level in the raw data and treated data via either of those models. Immediately, the performance of applied models are presented by a score calculated based on the maximum variability explained by the batch level, notify the consistency of model performance for all detected features (variables), facilitating quick comparison of the models for selecting one of those models, which is more appropriate to the data structure. This function is suggested for less than 2000 features (variables) for better computational speed.
 
 - Value
 
-Graphical check such as *Correlation* plot and *Score* plot compiled into a **PDF** and the two vector data matrix of Adjusted R-squared for each model and a *Table* of score for the maximum Adjusted R-squared detected for the applied models in the **csv** file.
+Graphical check such as *Correlation* plot and *Score* plot compiled into a **PDF** file and the two vector data matrix of Adjusted R-squared for each model and a *Table* of score for the maximum Adjusted R-squared detected for the applied models in the **csv** file.
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
@@ -128,11 +128,11 @@ ACDdbnorm(ff)
 > *Visualization of analytical heterogeneity on the profile of features (variables)
 in raw, ber- parametric ComBat and non-parametric ComBat corrected data*
 
-These functions allow users to adjust the data for batch effect using either of models implemented in the package described earlier, and inform about the presence of across batch signal drift or batch effect in the raw and treated data represented via the shifted probability density function plots (pdf plots) of the features (variables) detected in an experiment.
+These functions allow users to adjust the data for batch effect using either of models implemented in the package described earlier, and inform about the presence of across batch signal drift or batch effect in the raw and treated data represented via the shifted probability density function (PDF) plots of the features (variables) detected in an experiment.
 
 - Value
 
-Graphical check such as *pdf* plot compiled into a **PDF** file and a **csv** file of corrected dataset for either of moldel respecting applied function.
+Graphical check such as *PDF* plots compiled into a **PDF** file and a **csv** file of corrected dataset via either of applied function.
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
