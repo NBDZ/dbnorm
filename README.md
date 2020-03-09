@@ -19,8 +19,8 @@ Install package dependencies in CRAN and Bioconductor via codes bellow:
 > R installer
 ```
 install.packages(c("ggplot2","parallel","reshape2","plyr",
-"knitr","tibble","installr","fs","Rcpp", "rmarkdown","processx","backports",
-"bootstrap","boot","caret","dplyr","stringr","ggfortify","factoextra","NormalizeMets","MASS",
+"knitr","tibble","installr","fs","rmarkdown","processx","backports",
+"bootstrap","boot","caret","dplyr","stringr","ggfortify","factoextra","MASS",
 "RColorBrewer","RCurl","lattice","data.table","igraph","tidyr","scales",
 "e1071","fpc"))
 
