@@ -19,23 +19,35 @@ Install package dependencies in CRAN and Bioconductor via codes bellow:
 > R installer
 ```
 install.packages(c("ggplot2","parallel","reshape2","plyr",
-"mixOmics","knitr","tibble","installr","fs","Rcp", "rmarkdown","processx","backports",
-"bootstrap","boot","caret","dplyr","stringr","ggfortify","factoextra","NormalizeMets","MASS","ber",
+"knitr","tibble","installr","fs","Rcpp", "rmarkdown","processx","backports",
+"bootstrap","boot","caret","dplyr","stringr","ggfortify","factoextra","NormalizeMets","MASS",
 "RColorBrewer","RCurl","lattice","data.table","igraph","tidyr","scales",
 "e1071","fpc"))
 
 Call all those package by library:
-e.g. library (ber)
+e.g. library (MASS)
 ```
 > Bioconductor installer
 ```
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-BiocManager::install(c("pcaMethods","limma","impute","sva","BiocParallel","genefilter","Biobase"))
+BiocManager::install(c("pcaMethods","limma","impute","sva","BiocParallel","genefilter","Biobase","mixOmics"))
 Call all those package by library:
 e.g. library (sva)
 
+```
+> R package with old version
+```
+require(usethis)
+require(devtools)
+install_version("ber", version = "4.0", repos = "http://cran.us.r-project.org")
+install_version("NormalizeMets", version = "0.25", repos = "http://cran.us.r-project.org")
+install_version("Rcpp", version = "1.0.3", repos = "http://cran.us.r-project.org")
+
+library(ber)
+library(NormalizeMets)
+library(Rcpp)
 ```
 ### Step2: install the *dbnorm*
 *dbnorm* is freely available from GitHub. 
