@@ -32,7 +32,7 @@ e.g. library (MASS)
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-BiocManager::install(c("pcaMethods","limma","impute","sva","BiocParallel","genefilter","Biobase","mixOmics"))
+BiocManager::install(c("pcaMethods","limma","impute","sva","BiocParallel","genefilter","Biobase","mixOmics","statTarget"))
 Call all those package by library:
 e.g. library (sva)
 
