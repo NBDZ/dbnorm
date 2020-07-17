@@ -37,10 +37,11 @@ Call all those package by library:
 e.g. library (sva)
 
 ```
-> R package with old version
+> R install package from archive
 ```
 require(usethis)
 require(devtools)
+URL: https://cran.r-project.org/src/contrib/Archive/
 install_version("ber", version = "4.0", repos = "http://cran.us.r-project.org")
 install_version("NormalizeMets", version = "0.25", repos = "http://cran.us.r-project.org")
 install_version("metabolomics", version = "0.1.4", repos = "http://cran.us.r-project.org")
