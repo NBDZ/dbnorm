@@ -43,7 +43,6 @@ require(usethis)
 require(devtools)
 install_version("ber", version = "4.0", repos = "http://cran.us.r-project.org")
 install_version("NormalizeMets", version = "0.25", repos = "http://cran.us.r-project.org")
-install_version("Rcpp", version = "1.0.3", repos = "http://cran.us.r-project.org")
 install_version("metabolomics", version = "0.1.4", repos = "http://cran.us.r-project.org")
 
 library(ber)
