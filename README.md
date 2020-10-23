@@ -22,7 +22,7 @@ install.packages(c("ggplot2","parallel","reshape2","plyr",
 "knitr","tibble","installr","fs","rmarkdown","processx","backports",
 "bootstrap","boot","caret","dplyr","stringr","ggfortify","factoextra","MASS",
 "RColorBrewer","RCurl","lattice","data.table","igraph","tidyr","scales",
-"e1071","fpc"))
+"e1071","fpc","rlang","glue","digest"))
 
 Call all those package by library:
 e.g. library (MASS)
@@ -32,7 +32,8 @@ e.g. library (MASS)
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-BiocManager::install(c("pcaMethods","limma","impute","sva","BiocParallel","genefilter","Biobase","mixOmics","statTarget"))
+
+BiocManager::install(c("pcaMethods","limma","impute","sva","BiocParallel","genefilter","Biobase","mixOmics","statTarget", "multtest"))
 Call all those package by library:
 e.g. library (sva)
 
@@ -42,9 +43,9 @@ e.g. library (sva)
 require(usethis)
 require(devtools)
 URL: https://cran.r-project.org/src/contrib/Archive/
-install_version("ber", version = "4.0", repos = "http://cran.us.r-project.org")
-install_version("NormalizeMets", version = "0.25", repos = "http://cran.us.r-project.org")
-install_version("metabolomics", version = "0.1.4", repos = "http://cran.us.r-project.org")
+devtools::install_version("ber", version = "4.0", repos = "http://cran.us.r-project.org")
+devtools::install_version("NormalizeMets", version = "0.25", repos = "http://cran.us.r-project.org")
+devtools::install_version("metabolomics", version = "0.1.4", repos = "http://cran.us.r-project.org")
 
 library(ber)
 library(NormalizeMets)
