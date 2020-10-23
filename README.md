@@ -1,4 +1,4 @@
-# dbnorm (V-0.1)
+# dbnorm (V-0.2)
 
 A package for drift across batches normalization and visualization
 
