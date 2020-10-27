@@ -117,7 +117,7 @@ This function performs batch effect adjustment via three statistical models impl
 
 - Value
 
-Graphical check such as *PCA* plot and *Scree* plot compiled into a **PDF** and three **csv** files for adjusted data based on the models implemented in the package.The *RLA* plots are visualized in the **Viewer** panel in the **rstudio** console. 
+Graphical check such as *PCA* plot and *Scree* plot compiled into a **PDF** (saved in the working directory) and three **csv** files (saved in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") for adjusted data based on the models implemented in the package.The *RLA* plots are visualized in the **Viewer** panel in the **rstudio** console. 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
 Visdbnorm(ff)
