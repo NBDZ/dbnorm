@@ -117,7 +117,7 @@ This function performs batch effect adjustment via three statistical models impl
 
 - Value
 
-Graphical check such as *PCA* plot and *Scree* plot compiled into a **PDF** (saved in the working directory) and three **.csv** files (saved in a folder intiate with *Rtmpe* in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") for adjusted data based on the models implemented in the package.The *RLA* plots are visualized in the **Viewer** panel in the **rstudio** console. 
+Graphical check such as *PCA* plot and *Scree* plot compiled into a **PDF** (saved in the working directory) and three **.csv** files (saved in a folder, intiate with *Rtmpe*, in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") for adjusted data based on the models implemented in the package.The *RLA* plots are visualized in the **Viewer** panel in the **rstudio** console. 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
 Visdbnorm(ff)
@@ -129,7 +129,7 @@ This function gives a quick notification about the performance of the statistica
 
 - Value
 
-Graphical check such as *Correlation* plot and *Score* plot compiled into a **PDF** file (saved in the working directory) and **.csv** files (saved in a folder intiate with *Rtmpe* Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") in the two vector data matrix of Adjusted R-squared for each model and a *Table* of score for the maximum Adjusted R-squared detected for the applied models.
+Graphical check such as *Correlation* plot and *Score* plot compiled into a **PDF** file (saved in the working directory) and **.csv** files (saved in a folder, intiate with *Rtmpe*, in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") in the two vector data matrix of Adjusted R-squared for each model and a *Table* of score for the maximum Adjusted R-squared detected for the applied models.
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
@@ -147,7 +147,7 @@ These functions allow users to adjust the data for batch effect using either of 
 
 - Value
 
-Graphical check such as the plots compiled into a **PDF** file (saved in the working directory) and a **.csv** file (saved in a folder intiate with *Rtmpe* Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") of corrected dataset via either of applied function.
+Graphical check such as the plots compiled into a **PDF** file (saved in the working directory) and a **.csv** file (saved in a folder, intiate with *Rtmpe*, in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") of corrected dataset via either of applied function.
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
@@ -166,7 +166,7 @@ These functions allow users to adjust the data for across batch signal drift or 
 
 - Value
 
-Graphical check such as *PCA* plot, *Scree* plot and *Correlation* plot compiled into a **PDF** (saved in the working directory) and the **.csv** (saved in a folder intiate with *Rtmpe* Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") for corrected dataset based on either of applied model and the two column matrix of Adjusted-R squared. The *RLA* plots are visualized in the **Viewer** panel in the **rstudio** console. 
+Graphical check such as *PCA* plot, *Scree* plot and *Correlation* plot compiled into a **PDF** (saved in the working directory) and the **.csv** (saved in a folder, intiate with *Rtmpe*, in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") for corrected dataset based on either of applied model and the two column matrix of Adjusted-R squared. The *RLA* plots are visualized in the **Viewer** panel in the **rstudio** console. 
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
