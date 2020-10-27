@@ -129,7 +129,7 @@ This function gives a quick notification about the performance of the statistica
 
 - Value
 
-Graphical check such as *Correlation* plot and *Score* plot compiled into a **PDF** file (saved in the working directory) and the two vector data matrix of Adjusted R-squared for each model and a *Table* of score for the maximum Adjusted R-squared detected for the applied models in the **csv** file (saved in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem").
+Graphical check such as *Correlation* plot and *Score* plot compiled into a **PDF** file (saved in the working directory) and **csv** files (saved in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") in the two vector data matrix of Adjusted R-squared for each model and a *Table* of score for the maximum Adjusted R-squared detected for the applied models.
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
@@ -147,7 +147,7 @@ These functions allow users to adjust the data for batch effect using either of 
 
 - Value
 
-Graphical check such as *PDF* plots compiled into a **PDF** file (saved in the working directory) and a **csv** file (saved in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") of corrected dataset via either of applied function.
+Graphical check such as the plots compiled into a **PDF** file (saved in the working directory) and a **csv** file (saved in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") of corrected dataset via either of applied function.
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
