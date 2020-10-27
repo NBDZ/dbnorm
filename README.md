@@ -80,7 +80,7 @@ Download the tar.gz file from GitHun then in Rstudio from Tools icon, select Ins
 then Browse to the tar.gz file.
 ```
 ## Instructions
-In this section, we briefly introduce and explain the functions implemented in the *dbnorm* with the expected outcome. Data to be uploaded must be normalized and scaled on the log2 to account for the high abundance features (variables) by which technical heterogeneity might be overlooked. The input data must be in csv format with the independent experiments in the rows and the features (variables) in the columns, with the `batch` levels considered in the first column.
+In this section, we briefly introduce and explain the functions implemented in the *dbnorm* with the expected outcome. Data to be uploaded must be normalized and scaled on the log2 to account for the high abundance features (variables) by which technical heterogeneity might be overlooked. The input data must be in .csv format with the independent experiments in the rows and the features (variables) in the columns, with the `batch` levels considered in the first column.
 
 ##### *Upload your data ana call the package;*
 
@@ -129,7 +129,7 @@ This function gives a quick notification about the performance of the statistica
 
 - Value
 
-Graphical check such as *Correlation* plot and *Score* plot compiled into a **PDF** file and the two vector data matrix of Adjusted R-squared for each model and a *Table* of score for the maximum Adjusted R-squared detected for the applied models in the **csv** file.
+Graphical check such as *Correlation* plot and *Score* plot compiled into a **PDF** file (saved in the working directory) and the two vector data matrix of Adjusted R-squared for each model and a *Table* of score for the maximum Adjusted R-squared detected for the applied models in the **csv** file (saved in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem").
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
@@ -147,7 +147,7 @@ These functions allow users to adjust the data for batch effect using either of 
 
 - Value
 
-Graphical check such as *PDF* plots compiled into a **PDF** file and a **csv** file of corrected dataset via either of applied function.
+Graphical check such as *PDF* plots compiled into a **PDF** file (saved in the working directory) and a **csv** file (saved in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") of corrected dataset via either of applied function.
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
@@ -166,7 +166,7 @@ These functions allow users to adjust the data for across batch signal drift or 
 
 - Value
 
-Graphical check such as *PCA* plot, *Scree* plot and *Correlation* plot compiled into a **PDF** and the **csv** for corrected dataset based on either of applied model and the two column matrix of Adjusted-R squared. The *RLA* plots are visualized in the **Viewer** panel in the **rstudio** console. 
+Graphical check such as *PCA* plot, *Scree* plot and *Correlation* plot compiled into a **PDF** (saved in the working directory) and the **csv** (saved in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") for corrected dataset based on either of applied model and the two column matrix of Adjusted-R squared. The *RLA* plots are visualized in the **Viewer** panel in the **rstudio** console. 
 
 ```
 ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
