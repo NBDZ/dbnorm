@@ -110,7 +110,7 @@ df<-data[-1] #keep data matrix by removing batch level in the first column
 > emvf [df]
 f <- emvf[df] # save the imputed data matrix
 ```
-> - Visdbnorm ; 
+> - Visodbnorm ; 
 *Visualization of drift across batch normalization*
 
 This function performs batch effect adjustment via three statistical models implemented in the *dbnorm*, namely two-stage procedure as described by Giordan (2013)[DOI:10.1007/s12561-013-9081-1] and/or empirical Bayes methods in two setting of parametric and non-parametric as described by Johnson et al.(2007) [PMID: 16632515] and in sva package by Leek et al.(2012)[PMID: 22257669]. Meanwhile, the graphical inferences in the context of unsupervised learning algorithms create visual inspection to inform users about the spatial separation of the sample sets analyzed in the different analytical runs alongside the distribution of features (variables) in the raw and treated datasets. This function is suggested for less than 2000 features (variables).
@@ -119,10 +119,10 @@ This function performs batch effect adjustment via three statistical models impl
 
 Graphical check such as *PCA* plot and *Scree* plot compiled into a **PDF** (saved in the working directory) and three **.csv** files (saved in a folder, intiate with *Rtmpe*, in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") for adjusted data based on the models implemented in the package.The *RLA* plots are visualized in the **Viewer** panel in the **rstudio** console. 
 ```
-ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
-Visdbnorm(ff)
+
+Visodbnorm(data)
 ```
-> - ACDdbnorm ; 
+> dbnormSCORE ; 
 *Adjusted coefficient of determination for a data normalized for across batch signal drift*
 
 This function gives a quick notification about the performance of the statistical models, two-stage procedure [DOI:10.1007/s12561-013-9081-1] and/or empirical Bayes methods in two setting of parametric and non-parametric as described in [PMID: 16632515] and by sva package [PMID:22257669], implemented in the dbnorm package, in accommodating technical variability. Subsequently, the  adjusted coefficient of determination or Adjusted R-Squared is calculated for each variable estimated in a regression model for its dependency to the batch level in the raw data and treated data via either of those models. Immediately, the performance of applied models are presented by a score calculated based on the maximum variability explained by the batch level, notify the consistency of model performance for all detected features (variables), facilitating quick comparison of the models for selecting one of those models, which is more appropriate to the data structure. This function is suggested for less than 2000 features (variables) for better computational speed.
@@ -132,13 +132,14 @@ This function gives a quick notification about the performance of the statistica
 Graphical check such as *Correlation* plot and *Score* plot compiled into a **PDF** file (saved in the working directory) and **.csv** files (saved in a folder, intiate with *Rtmpe*, in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") in the two vector data matrix of Adjusted R-squared for each model and a *Table* of score for the maximum Adjusted R-squared detected for the applied models.
 
 ```
-ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
-ACDdbnorm(ff)
+dbnormSCORE (data)
 ```
-> - profplotraw
-> - profplotber
-> - profplotpcomr 
-> - profplotnpcomr
+>- profplotraw
+>- ProfPlotber
+>- ProfPlotBagging
+>- ProfPlotComPara
+>- ProfPlotComPara
+>- ProfPlotComNPara
 
 > *Visualization of analytical heterogeneity on the profile of features (variables)
 in raw, ber- parametric ComBat and non-parametric ComBat corrected data*
@@ -150,15 +151,17 @@ These functions allow users to adjust the data for batch effect using either of 
 Graphical check such as the plots compiled into a **PDF** file (saved in the working directory) and a **.csv** file (saved in a folder, intiate with *Rtmpe*, in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") of corrected dataset via either of applied function.
 
 ```
-ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
-profplotraw(ff)
-profplotber(ff)
-profplotpcomr(ff)
-profplotnpcomr(ff)
+profplotraw (data)
+ProfPlotber (data)
+ProfPlotBagging (data)
+ProfPlotComPara (data)
+ProfPlotComPara (data)
+ProfPlotComNPara (data)
 ```
 > - dbnormBer
-> - dbnormPcom 
-> - dbnormNPcom 
+> - dbnormBagging 
+> - dbnormPcom  
+> - dbnormNPcom
 
 > *Data normalization for across batches signal drift using either of  ber-, parametric ComBat- and non parametric ComBat- models and unsupervised clustering and regression analysis of corrected data*
 
@@ -169,10 +172,10 @@ These functions allow users to adjust the data for across batch signal drift or 
 Graphical check such as *PCA* plot, *Scree* plot and *Correlation* plot compiled into a **PDF** (saved in the working directory) and the **.csv** (saved in a folder, intiate with *Rtmpe*, in Users's Temporary directory: "C:\Users\ “%USERNAME”\AppData\Local\Tem") for corrected dataset based on either of applied model and the two column matrix of Adjusted-R squared. The *RLA* plots are visualized in the **Viewer** panel in the **rstudio** console. 
 
 ```
-ff<- data.frame(data[1],f]# frame the batch level with imputed matrix
-dbnormBer(ff)
-dbnormPcom(ff)
-dbnormNPcom(ff)
+dbnormBer(data)
+dbnormBagging (data)
+dbnormPcom(data)
+dbnormNPcom(data)
 
 ```
 # License
