@@ -178,7 +178,11 @@ dbnormPcom(data)
 dbnormNPcom(data)
 
 ```
+```
 
+
+
+```
 # License
 Distributed under the GLP license. See LICENSE for details.
 
