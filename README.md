@@ -10,7 +10,7 @@ conventional functions for batch effect correction based on statistical models, 
 tools to generate several diagnosis plots to help users to choose the statistical model which better fits to their data 
 structure. *dbnorm* includes several statistical models such as, ComBat(parametric and non-parametric)-model [PMID:16632515]  from sva package [PMID:22257669] ,that was already in use for metabolomics data normalization, and ber function [DOI:10.1007/s12561-013-9081-1], priorly developed for microarray gene expression data, that we propose here as a new approach for correction of drift across batch in metabolomics datasets. 
 ## A glimpse into the "dbnorm"
-![GitHub](https://user-images.githubusercontent.com/37698532/99926266-f42afe00-2cf5-11eb-8806-c980e8d43e33.png)
+![GitHub](https://user-images.githubusercontent.com/37698532/99926436-8e8b4180-2cf6-11eb-84d1-79ab00a68af4.png)
 ## Getting started
 ### Step1: installation
 Install package dependencies in CRAN and Bioconductor via codes bellow:
