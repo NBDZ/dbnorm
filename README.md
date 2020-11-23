@@ -142,6 +142,7 @@ dbnormSCORE (data)
 >- ProfPlotComPara;
 >- ProfPlotComPara;
 >- ProfPlotComNPara;
+
 *Visualization of analytical heterogeneity on the profile of features (variables)*
 
 in raw, ber- parametric ComBat and non-parametric ComBat corrected data*
@@ -161,10 +162,11 @@ ProfPlotComPara (data)
 ProfPlotComNPara (data)
 ```
 
-> - dbnormBer
-> - dbnormBagging 
-> - dbnormPcom  
-> - dbnormNPcom
+> - dbnormBer;
+> - dbnormBagging;
+> - dbnormPcom;
+> - dbnormNPcom;
+
 *Data normalization for across batches signal drift using either of  ber-, parametric ComBat- and non parametric ComBat- models and unsupervised clustering and regression analysis of corrected data*
 
 
@@ -183,7 +185,9 @@ dbnormNPcom(data)
 ```
 
 > - hclustdbnorm;
+
  *Hierarchical clustering analysis of original data and corrected data for batch effect*
+ 
 This function allows users to evaluate dissimilarity between identical samples (quality control replicates or analytical replicates) analyzed in different batches, prior and after correction using, ber, ber_bagging and parametric and non-parametric ComBat . Pearson distance and average method for clustering were considered.Bagging model is performed using partial bagging with n=150 bootstrap samples
 
 ```
