@@ -122,7 +122,7 @@ Graphical check such as *PCA* plot and *Scree* plot compiled into a **PDF** (sav
 
 Visodbnorm(data)
 ```
-> dbnormSCORE ; 
+>- dbnormSCORE ; 
 *Adjusted coefficient of determination for a data normalized for across batch signal drift*
 
 This function gives a quick notification about the performance of the statistical models, two-stage procedure [DOI:10.1007/s12561-013-9081-1] and/or empirical Bayes methods in two setting of parametric and non-parametric as described in [PMID: 16632515] and by sva package [PMID:22257669], implemented in the dbnorm package, in accommodating technical variability. Subsequently, the  adjusted coefficient of determination or Adjusted R-Squared is calculated for each variable estimated in a regression model for its dependency to the batch level in the raw data and treated data via either of those models. Immediately, the performance of applied models are presented by a score calculated based on the maximum variability explained by the batch level, notify the consistency of model performance for all detected features (variables), facilitating quick comparison of the models for selecting one of those models, which is more appropriate to the data structure. This function is suggested for less than 2000 features (variables) for better computational speed.
@@ -135,14 +135,14 @@ Graphical check such as *Correlation* plot and *Score* plot compiled into a **PD
 dbnormSCORE (data)
 ```
 
-*Visualization of analytical heterogeneity on the profile of features (variables)*
->- profplotraw
->- ProfPlotber
->- ProfPlotBagging
->- ProfPlotComPara
->- ProfPlotComPara
->- ProfPlotComNPara
 
+>- profplotraw;
+>- ProfPlotber;
+>- ProfPlotBagging;
+>- ProfPlotComPara;
+>- ProfPlotComPara;
+>- ProfPlotComNPara;
+*Visualization of analytical heterogeneity on the profile of features (variables)*
 
 in raw, ber- parametric ComBat and non-parametric ComBat corrected data*
 
@@ -160,11 +160,12 @@ ProfPlotComPara (data)
 ProfPlotComPara (data)
 ProfPlotComNPara (data)
 ```
-> *Data normalization for across batches signal drift using either of  ber-, parametric ComBat- and non parametric ComBat- models and unsupervised clustering and regression analysis of corrected data*
+
 > - dbnormBer
 > - dbnormBagging 
 > - dbnormPcom  
 > - dbnormNPcom
+*Data normalization for across batches signal drift using either of  ber-, parametric ComBat- and non parametric ComBat- models and unsupervised clustering and regression analysis of corrected data*
 
 
 To increase computational processing of big data, in these functions, statistical models and  graphical checks implemented in “Visodborm” decomposed in to several separated functions each of these performing a unique batch effect correction with respective result and graphical checks.
@@ -180,8 +181,9 @@ dbnormPcom(data)
 dbnormNPcom(data)
 
 ```
-> *Hierarchical clustering analysis of original data and corrected data for batch effect*
-> hclustdbnorm
+
+> - hclustdbnorm;
+ *Hierarchical clustering analysis of original data and corrected data for batch effect*
 This function allows users to evaluate dissimilarity between identical samples (quality control replicates or analytical replicates) analyzed in different batches, prior and after correction using, ber, ber_bagging and parametric and non-parametric ComBat . Pearson distance and average method for clustering were considered.Bagging model is performed using partial bagging with n=150 bootstrap samples
 
 ```
