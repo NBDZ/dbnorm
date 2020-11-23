@@ -136,16 +136,13 @@ dbnormSCORE (data)
 ```
 
 
->- profplotraw;
->- ProfPlotber;
->- ProfPlotBagging;
->- ProfPlotComPara;
->- ProfPlotComPara;
+>- profplotraw
+>- ProfPlotber
+>- ProfPlotBagging
+>- ProfPlotComPara
+>- ProfPlotComPara
 >- ProfPlotComNPara;
-
-*Visualization of analytical heterogeneity on the profile of features (variables)*
-
-in raw, ber- parametric ComBat and non-parametric ComBat corrected data*
+*Visualization of analytical heterogeneity on the profile of features (variables) in raw data and after correction via ber-, ber-bagging, parametric ComBat and non-parametric ComBat*
 
 These functions allow users to adjust the data for batch effect using either of models implemented in the package described earlier, and inform about the presence of across batch signal drift or batch effect in the raw and treated data represented via the shifted probability density function (PDF) plots of the features (variables) detected in an experiment.
 
@@ -162,12 +159,11 @@ ProfPlotComPara (data)
 ProfPlotComNPara (data)
 ```
 
-> - dbnormBer;
-> - dbnormBagging;
-> - dbnormPcom;
+> - dbnormBer
+> - dbnormBagging
+> - dbnormPcom
 > - dbnormNPcom;
-
-*Data normalization for across batches signal drift using either of  ber-, parametric ComBat- and non parametric ComBat- models and unsupervised clustering and regression analysis of corrected data*
+*Data normalization for across batches signal drift using either of  ber-,ber-bagging, parametric ComBat- and non parametric ComBat- models and unsupervised clustering and regression analysis of corrected data*
 
 
 To increase computational processing of big data, in these functions, statistical models and  graphical checks implemented in “Visodborm” decomposed in to several separated functions each of these performing a unique batch effect correction with respective result and graphical checks.
@@ -185,8 +181,7 @@ dbnormNPcom(data)
 ```
 
 > - hclustdbnorm;
-
- *Hierarchical clustering analysis of original data and corrected data for batch effect*
+*Hierarchical clustering analysis of original data and corrected data for batch effect*
  
 This function allows users to evaluate dissimilarity between identical samples (quality control replicates or analytical replicates) analyzed in different batches, prior and after correction using, ber, ber_bagging and parametric and non-parametric ComBat . Pearson distance and average method for clustering were considered.Bagging model is performed using partial bagging with n=150 bootstrap samples
 
