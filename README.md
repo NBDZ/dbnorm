@@ -135,8 +135,8 @@ dbnormSCORE (data)
 ```
 
 
->- profplotraw
->- ProfPlotber
+>- ProfPlotraw
+>- ProfPlotBer
 >- ProfPlotBagging
 >- ProfPlotComPara
 >- ProfPlotComPara
@@ -151,7 +151,7 @@ Graphical check such as the plots compiled into a **PDF** file (saved in the wor
 
 ```
 profplotraw (data)
-ProfPlotber (data)
+ProfPlotBer (data)
 ProfPlotBagging (data)
 ProfPlotComPara (data)
 ProfPlotComPara (data)
