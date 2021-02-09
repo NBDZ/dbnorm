@@ -188,5 +188,5 @@ This function allows users to evaluate dissimilarity between identical samples (
 hclustdbnorm (data)
 ```
 # License
-Distributed under the GLP license. See LICENSE for details.
+Distributed under the GPL license. See LICENSE for details.
 
