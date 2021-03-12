@@ -12,7 +12,7 @@ structure. *dbnorm* includes several statistical models such as, ComBat(parametr
 ## A glimpse into the "dbnorm"
 ![image](https://user-images.githubusercontent.com/37698532/99926565-00638b00-2cf7-11eb-8101-2436a8d17c40.png)
 
-https://www.nature.com/articles/s41598-021-84824-3
+https://www.nature.com/articles/s41598-021-84824-3 
 ![DOI](https://www.nature.com/articles/s41598-021-84824-3)
 ## Getting started
 ### Step1: installation
